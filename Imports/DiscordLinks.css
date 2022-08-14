@@ -19,6 +19,27 @@
     font-weight: 500;
 }
 
+.messageContent-2t3eCI a[href^="https://endurion.net"]:not([href*="channels"])
+{
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.messageContent-2t3eCI a[href^="https://endurion.net"]:not([href*="channels"])::after
+{
+    content: "Jump To Endurion Website";
+    font-size: 11pt !important;
+    line-height: 10px !important;
+    background: var(--brand-experiment-30a);
+    color: var(--brand-experiment-200);
+    transition: background-color 50ms ease-out, color 50ms ease-out;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+}
+
 .messageContent-2t3eCI a[href^="https://support.discord.com"]
 {
     font-size: 0;
@@ -97,7 +118,13 @@
     content: "Jump To Jobs At Discord" !important;
 }
 
+.messageContent-2t3eCI a[href^="https://endurion.net"]::after
+{
+    content: "Jump To Jobs At Discord" !important;
+}
+
 .messageContent-2t3eCI a[href^="https://discord.com/branding"]::after
 {
     content: "Jump To Discord Branding" !important;
 }
+
